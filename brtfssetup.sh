@@ -5,7 +5,7 @@ mount -t btrfs /dev/"$DISK" /mnt
 btrfs subvolume create /mnt/root
 btrfs subvolume create /mnt/home
 btrfs subvolume create /mnt/nix
-btrfs subvolume create /mnt/data
+btrfs subvolume create /mnt/bulk
 btrfs subvolume create /mnt/log
 
 # We then take an empty *readonly* snapshot of the root subvolume,
